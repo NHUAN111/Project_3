@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="Chi tiết đơn hàng"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvPriceTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:textSize="20sp"
+                    android:gravity="right"
+                    android:text="70.000 VNĐ"
+                    android:textColor="@color/main"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+
+                <ListView
+                    android:id="@+id/listAllFoodCheckout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+               </ListView>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:background="#E3DDDD"
+                    android:id="@+id/spinerCheckout"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_height="50dp"/>
+
+                <EditText
+                    android:id="@+id/tvNameCheckout"
+                    android:inputType="textPersonName"
+                    android:hint="Họ và tên (*)"
+                    android:background="@drawable/rounded_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="20dp" />
+
+
+                <EditText
+                    android:id="@+id/tvPhoneCheckOut"
+                    android:hint="Số điện thoại"
+                    android:inputType="number"
+                    android:background="@drawable/rounded_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="20dp" />
+
+
+                <EditText
+                    android:id="@+id/tvAddressCheckOut"
+                    android:hint="Địa chỉ giao hàng"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/rounded_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="20dp" />
+
+
+                <EditText
+                    android:id="@+id/tvEmailCheck"
+                    android:hint="Email(*)"
+                    android:background="@drawable/rounded_edittext"
+                    android:inputType="textEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10">
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#E3DDDD"
+                    android:layout_weight="5"
+                    android:text="Huỷ bỏ"
+                    android:textColor="@color/black"
+                    app:cornerRadius="16dp" />
+
+                <Button
+                    android:id="@+id/btnCheckout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:backgroundTint="@color/main"
+                    android:text="Đặt hàng"
+                    android:textColor="@color/white"
+                    app:cornerRadius="16dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+</androidx.cardview.widget.CardView>

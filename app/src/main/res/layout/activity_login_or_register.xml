@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LoginOrRegisterActivity">
+
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolBarLogin"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="#f6f6f6"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        tools:ignore="MissingConstraints">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imgBackLogins"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/arrowleft" />-->
+
+<!--    </androidx.appcompat.widget.Toolbar>-->
+
+    <com.example.myapplication.Widget.CustomTablayout
+        android:id="@+id/tab_layout_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:background="#F6F5F5"
+        app:tabIndicatorColor="@color/main"
+        app:tabIndicatorHeight="1dp"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/main"
+        app:tabTextAppearance="@style/customfontstyle" />
+
+    <com.example.myapplication.Widget.CustomViewPager
+        android:id="@+id/viewpager_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_layout_login" />
+
+</RelativeLayout>

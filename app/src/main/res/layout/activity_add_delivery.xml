@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.DeliveryActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBarLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f6f6f6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Địa chỉ nhận hàng"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/name"-->
+        <!--            android:textSize="14sp"-->
+        <!--            android:hint="Tên người nhận"-->
+        <!--            android:inputType="textPersonName"-->
+        <!--            android:background="@drawable/rounded_edittext"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_marginBottom="20dp"-->
+        <!--            android:layout_height="46dp"/>-->
+
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/phone"-->
+        <!--            android:textSize="14sp"-->
+        <!--            android:background="@drawable/rounded_edittext"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:hint="Số điện thoại"-->
+        <!--            android:inputType="number"-->
+        <!--            android:layout_marginBottom="20dp"-->
+        <!--            android:layout_height="46dp"/>-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tỉnh/ thành phố"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinerCity"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginBottom="20dp"
+            android:background="#ECEAEA"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quận/ huyện"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        <Spinner
+            android:id="@+id/spinerPronvice"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginBottom="20dp"
+            android:background="#ECEAEA"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phường / xã"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        <Spinner
+            android:id="@+id/spinerWard"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginBottom="20dp"
+            android:background="#ECEAEA"
+            tools:ignore="MissingConstraints" />
+        <EditText
+            android:id="@+id/address"
+            android:textSize="14sp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_width="match_parent"
+            android:hint="Số nhà, ngõ, đường..."
+            android:layout_marginBottom="30dp"
+            android:layout_height="46dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnAddAddress"
+                android:text="Lưu"
+                app:cornerRadius="10dp"
+                android:background="@drawable/border_item"
+                android:backgroundTint="@color/main"
+                android:textColor="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_width="120dp"
+                android:layout_height="40dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
